@@ -7,11 +7,15 @@ package fr.uvsq.tod.compte;
  * @version 2020
  */
 public class Compte {
-  public Compte(int initialBalance) {
+  int init ;
 
+  public Compte(int initialBalance) {
+  this.init=initialBalance;
   }
 
+
   public int getBalance() {
-    return 0;
+
+    return init;
   }
 }
