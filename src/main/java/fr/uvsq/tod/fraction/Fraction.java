@@ -52,7 +52,8 @@ public class Fraction implements Comparable<Fraction> {
    * @return le numérateur
    */
   public BigInteger getNumerator() {
-    return null;
+
+    return numerator ;
   }
 
   /**
@@ -60,7 +61,8 @@ public class Fraction implements Comparable<Fraction> {
    * @return le dénominateur
    */
   public BigInteger getDenominator() {
-    return null;
+
+    return denominateur;
   }
 
   /**
