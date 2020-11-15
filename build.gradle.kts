@@ -23,5 +23,6 @@ repositories {
 val JUNIT_VERSION = "4.12"
 
 dependencies {
+    implementation("org.junit.jupiter:junit-jupiter:5.4.2")
     testImplementation("junit:junit:$JUNIT_VERSION") // Use JUnit test framework
 }

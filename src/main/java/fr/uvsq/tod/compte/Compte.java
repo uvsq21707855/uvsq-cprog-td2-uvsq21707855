@@ -7,15 +7,19 @@ package fr.uvsq.tod.compte;
  * @version 2020
  */
 public class Compte {
-  int init ;
+  private int solde;        // solde du compte
+
 
   public Compte(int initialBalance) {
-  this.init=initialBalance;
+    this.solde=initialBalance;
   }
-
 
   public int getBalance() {
-
-    return init;
+    return solde;
   }
+
+  public void crediter(int montant) {
+    solde += montant;
+  }
+
 }
