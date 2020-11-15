@@ -18,7 +18,9 @@ import java.math.BigInteger;
 public class Fraction implements Comparable<Fraction> {
   private final BigInteger denominateur;
   private final BigInteger numerator;
-
+  static Fraction ZERO = new Fraction(BigInteger.valueOf(0),BigInteger.valueOf(1));
+  static Fraction UN_DEMI  = new Fraction(BigInteger.valueOf(1),BigInteger.valueOf(2));
+  static Fraction UN = new Fraction(BigInteger.valueOf(1),BigInteger.valueOf(1));
   /**
    * Initialise un nombre rationnel avec un numérateur et un dénominateur.
    * @param numerator le numérateur
@@ -70,6 +72,7 @@ public class Fraction implements Comparable<Fraction> {
    * @return la valeur de la fraction
    */
   public double doubleValue() {
+
     return 0.0;
   }
 
