@@ -15,4 +15,10 @@ public class WordAnalyzerTest {
     WordAnalyzer w = new WordAnalyzer("maan");
     assertEquals('a', w.firstRepeatedCharacter());
   }
+
+  @Test
+  public void  irstRepeatedCharactertest1() {
+    WordAnalyzer wa=new WordAnalyzer("france");
+    assertEquals('0', wa.firstRepeatedCharacter());
+  }
 }
