@@ -104,3 +104,7 @@ public class Fraction implements Comparable<Fraction> {
     return 0;
   }
 }
+
+public String toString(){
+  return "" + numerator + "/" + denominateur;
+}
