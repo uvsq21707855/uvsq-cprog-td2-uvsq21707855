@@ -11,7 +11,9 @@ public class Compte {
 
 
   public Compte(int initialBalance) {
-    this.solde=initialBalance;
+    if (initialBalance>0) {
+      this.solde = initialBalance;
+    }
   }
 
   public int getBalance() {

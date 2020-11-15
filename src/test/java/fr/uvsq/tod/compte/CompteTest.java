@@ -40,12 +40,11 @@ public class CompteTest {
     assertEquals(70,c1.getBalance());
   }
 
-/*
+
   @Test
   public void shouldcomptepositif(){
-    assertEquals();
+    Compte c = new Compte(-70);
+      assertEquals(100, c.getBalance());
+    }
 
-  }
-
- */
 }
