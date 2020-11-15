@@ -25,6 +25,7 @@ public class Compte {
   }
 
   public void debiter(int montant) {
+    if (montant > 0 && this.solde-montant >=0)
     solde -= montant;
   }
 

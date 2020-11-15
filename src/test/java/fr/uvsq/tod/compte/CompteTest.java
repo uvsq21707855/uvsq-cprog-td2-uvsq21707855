@@ -40,5 +40,5 @@ public class CompteTest {
     assertEquals(70,c1.getBalance());
   }
 
-  
+
 }
