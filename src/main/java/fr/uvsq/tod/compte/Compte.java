@@ -22,4 +22,7 @@ public class Compte {
     solde += montant;
   }
 
+  public void debiter(int montant) {
+    solde -= montant;
+  }
 }

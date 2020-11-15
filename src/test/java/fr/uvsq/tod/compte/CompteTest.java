@@ -25,6 +25,12 @@ public class CompteTest {
 
   }
 
+  @Test
+  public void testdebiter() {
+    Compte compte= new Compte(100);
+    compte.debiter(30);
+    assertEquals(70,compte.getBalance());
+  }
 /*
   @Test
   public void shouldcomptepositif(){
