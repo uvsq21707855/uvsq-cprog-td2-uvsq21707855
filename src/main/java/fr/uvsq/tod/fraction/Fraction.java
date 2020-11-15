@@ -9,6 +9,7 @@ package fr.uvsq.tod.fraction;
 
 import java.math.BigInteger;
 
+
 /**
  * La classe <code>Fraction</code> représente un nombre rationnel.
  *
@@ -87,8 +88,8 @@ public class Fraction implements Comparable<Fraction> {
    */
   public Fraction add(Fraction aFraction) {
 
-    a = (this.numerator * aFraction.numerator) - (this.denominateur*aFraction.denominateur);
-    b = this.denominateur * aFraction.denominateur;
+    a = (this.numerator.multiply(aFraction.numerator) ) - (this.denominateur.multiply(aFraction.denominateur));
+    b = this.denominateur.multiply(aFraction.denominateur);
 
     return new Fraction(a,b);
   }
