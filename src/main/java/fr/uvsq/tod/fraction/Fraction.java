@@ -16,7 +16,8 @@ import java.math.BigInteger;
  * @version 2020
  */
 public class Fraction implements Comparable<Fraction> {
-
+  private final BigInteger denominateur;
+  private final BigInteger numerator;
 
   /**
    * Initialise un nombre rationnel avec un numérateur et un dénominateur.
@@ -24,7 +25,8 @@ public class Fraction implements Comparable<Fraction> {
    * @param denominator le dénominateur
    */
   public Fraction(BigInteger numerator, BigInteger denominator) {
-
+  this.numerator = numerator;
+  this.denominateur = denominator;
   }
 
   /**
@@ -32,14 +34,17 @@ public class Fraction implements Comparable<Fraction> {
    * @param numerator le numérateur
    */
   public Fraction(BigInteger numerator) {
-
+  this.numerator = numerator;
+  this.denominateur= BigInteger.valueOf(0);
   }
+  // modification : on transforme l'int au BigInteger
 
   /**
    * Initialise un nombre rationnel avec 0 comme numérateur et 1 comme dénominateur.
    */
   public Fraction() {
-
+    this.numerator= BigInteger.valueOf(0);
+    this.denominateur= BigInteger.valueOf(1);
   }
 
   /**
