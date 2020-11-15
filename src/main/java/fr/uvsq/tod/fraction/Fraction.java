@@ -18,6 +18,10 @@ import java.math.BigInteger;
 public class Fraction implements Comparable<Fraction> {
   private final BigInteger denominateur;
   private final BigInteger numerator;
+  private BigInteger a;
+  private BigInteger b;
+
+
   static Fraction ZERO = new Fraction(BigInteger.valueOf(0),BigInteger.valueOf(1));
   static Fraction UN_DEMI  = new Fraction(BigInteger.valueOf(1),BigInteger.valueOf(2));
   static Fraction UN = new Fraction(BigInteger.valueOf(1),BigInteger.valueOf(1));
@@ -82,7 +86,11 @@ public class Fraction implements Comparable<Fraction> {
    * @return la fraction somme
    */
   public Fraction add(Fraction aFraction) {
-    return null;
+
+    a = (this.numerator * aFraction.numerator) - (this.denominateur*aFraction.denominateur);
+    b = this.denominateur * aFraction.denominateur;
+
+    return new Fraction(a,b);
   }
 
   /**
