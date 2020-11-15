@@ -1,3 +1,10 @@
+// une classe immuable : Un objet immuable
+// est une instance de classe dont les membres exportés
+// ne peuvent être modifiés après création
+
+// impact qui aura sur l'implémentation :
+// on met les attributs en private final.
+
 package fr.uvsq.tod.fraction;
 
 import java.math.BigInteger;
@@ -9,6 +16,8 @@ import java.math.BigInteger;
  * @version 2020
  */
 public class Fraction implements Comparable<Fraction> {
+
+
   /**
    * Initialise un nombre rationnel avec un numérateur et un dénominateur.
    * @param numerator le numérateur
