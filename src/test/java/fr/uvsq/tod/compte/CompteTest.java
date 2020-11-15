@@ -31,6 +31,15 @@ public class CompteTest {
     compte.debiter(30);
     assertEquals(70,compte.getBalance());
   }
+
+  @Test
+  public void testvirement() {
+    Compte c1=new Compte(100);
+    Compte c=new Compte(20);
+    c1.virement(c,50);
+    assertEquals(70,c1.getBalance());
+  }
+
 /*
   @Test
   public void shouldcomptepositif(){

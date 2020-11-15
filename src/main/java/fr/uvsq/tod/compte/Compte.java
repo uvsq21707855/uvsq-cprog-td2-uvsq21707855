@@ -25,4 +25,10 @@ public class Compte {
   public void debiter(int montant) {
     solde -= montant;
   }
+
+  public void virement(Compte c, int mt){
+    c.crediter(mt);
+    debiter(mt);
+  }
+
 }
